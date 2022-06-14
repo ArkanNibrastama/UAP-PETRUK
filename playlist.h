@@ -24,4 +24,4 @@ void addPlaylist(){
 	cout<<"no song added yet"<<endl;
 	
 }
-}
+
