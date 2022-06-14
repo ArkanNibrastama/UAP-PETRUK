@@ -2,8 +2,7 @@
 
 // PR
 // - connect fungsi play (nunggu fungsi playlist kartika dulu)
-// - tambahin fungsi home (raturn to home)
-// - pindahin fungsi exit ke home
+
 
 using namespace std;
 
@@ -138,11 +137,11 @@ int main(){
 	int n=10;
 	
 	string Judul[n]={"YOU WERE BEAUTIFUL","UNTIL I FOUND YOU","FLY ME TO THE MOON (REMASTERED)","ILYSB-STRIPPED","REMAJA",
-					"925","HERE WE GO AGAIN","ENCHANTED","PAPER RINGS","GORGEOUS"};
+			"925","HERE WE GO AGAIN","ENCHANTED","PAPER RINGS","GORGEOUS"};
 	string Penyanyi[n]={"DAY6","Stephen Sanchez","Frank Sinatra","LANY","Hivi!","Ardhito Pramono","Ardhito Pramono","Taylor Swift",
-						"Taylor Swift","Taylor Swift"};
+			"Taylor Swift","Taylor Swift"};
 	string Album[n]={"Sunrise","Until I Found You","FLY ME TO THE MOON (REMASTERED)","LANY","Kereta Kencan","Craziest thing happened in my backyard",
-					"Craziest thing happened in my backyard","Speak Now","Lover","Reputation"};
+			"Craziest thing happened in my backyard","Speak Now","Lover","Reputation"};
 	string rilis[n]={"2016","2021","2008","2017","2017","2020","2020","2010","2019","2017"};
 	
     bool exit=false;
