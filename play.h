@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 struct Music{
@@ -123,17 +124,34 @@ void display(){
 }
 
 
-void Play(string song[], string artist[]){
+//pake vector kyknya nanti
+void Play(vector<string> song, vector<string> artist, int n){
 
-    for (int i = 0; i < 5; i++){
+    string arrSong[n], arrArtist[n];
+    int c1 = 0, c2 = 0;
 
-        if (i == 0){
+    for (auto i = song.begin(); i != song.end(); i++){
 
-            firstMusic(song[i], artist[i]);
+        arrSong[c1] = *i;
+        c1 += 1;
+
+    }
+    for (auto j = song.begin(); j != song.end(); j++){
+
+        arrArtist[c2] = *j;
+        c2 += 1;
+
+    }
+
+    for (int k = 0; k < n; k++){
+
+        if (k == 0){
+
+            firstMusic(arrSong[k], arrArtist[k]);
 
         }else{
 
-            addMusic(song[i], artist[i]);
+            addMusic(arrSong[k], arrArtist[k]);
 
         }
 
@@ -142,6 +160,3 @@ void Play(string song[], string artist[]){
     display();
 
 }
-
-//nanti yang dipanggil ke program utamanya cukup fungsi Play dengan parameternya 
-//arry judul lagu & array nama penyanyinya
