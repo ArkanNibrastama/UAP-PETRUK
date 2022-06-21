@@ -252,7 +252,7 @@ int main(){
         else if (pil == 2){
             
             vector<string> song = playlistSong();
-            vector<string> artist = playlistSong();
+            vector<string> artist = playlistArtist();
 
             if (song.empty() == false){
 
